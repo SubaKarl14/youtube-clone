@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="assets\icons\youtube.png" type="image/icon type">
+<title>Fake YouTube</title>
+<link rel="stylesheet" href="assets\styles.css">
+<script src="assets\scripts.js"></script>
+</head>
+<body>
+<!-- Header -->
+<header>
+    <div class="left-header">
+        <!-- hamburger menu-->
+        <div  class="hamburger" onclick="openNav()" >
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <!-- yt logo and name-->
+        <div class="yt-leftHeader">
+            <img src="assets\icons\yt-name-logo.png" alt="Youtube logo" class="youtube-icon">
+        </div>
+    </div>
+    <!-- search-->
+    <div class="mid-header">
+        <div class="search-container">
+            <input type="text" placeholder="Search" class="search-input"> 
+            <button class="erase-icon" type="reset"></button>  
+            <button class="search-button">
+            <img src="assets\icons\search.png" alt="Search Icon" class="search-icon">
+            </button>
+            
+        </div>
+        <img src="assets\icons\mic.png" alt="" class="speak-icon">
+    </div>
+    <div class="right-header">
+        <img src="assets\icons\search.png" alt="user icon" class="search2-icon">
+        <img src="assets/icons/video.png" alt="" class="video-icon">
+        <img src="assets/icons/notification.png" alt="bell icon" class="notif-icon">
+        <img src="assets/icons/user.png" alt="user icon" class="profile-icon">
+    </div>
+    
+</header>
+
+<!-- carousel -->
+<div class="list-genre">
+    <div class="wrapper">
+        <div class="carousel">
+          <div class="carousel-item" draggable="false">All</div>
+          <div class="carousel-item" draggable="false">Music</div>
+          <div class="carousel-item" draggable="false">Contemporary R&B</div>
+          <div class="carousel-item" draggable="false">Mixes</div>
+          <div class="carousel-item" draggable="false">HTML</div>
+          <div class="carousel-item" draggable="false">Playlists</div>
+          <div class="carousel-item" draggable="false">Interscope Records</div>
+          <div class="carousel-item" draggable="false">Scratching</div>
+          <div class="carousel-item" draggable="false">Gaming</div>
+          <div class="carousel-item" draggable="false">Philippine Music</div>
+          <div class="carousel-item" draggable="false">Indie Rock</div>
+          <div class="carousel-item" draggable="false">News</div>
+          <div class="carousel-item" draggable="false">Reggae</div>
+          <div class="carousel-item" draggable="false">Pop Rock</div>
+          <div class="carousel-item" draggable="false">Country Music</div>
+          <div class="carousel-item"draggable="false">Live</div>
+          <div class="carousel-item" draggable="false">Indie Rock</div>
+          <div class="carousel-item"draggable="false">News</div>
+          <div class="carousel-item" draggable="false">Reggae</div>
+          <div class="carousel-item" draggable="false">Pop Rock</div>
+          <div class="carousel-item" draggable="false">Country Music</div>
+          <div class="carousel-item">Live</div>
+          <div class="carousel-item">Pop Rock</div>
+          <div class="carousel-item">Country Music</div>
+        </div>
+        <button class="carousel-btn right-btn" id="right-btn">&gt;</button>
+
+      </div>
+</div>
+
+
+<div class="main">
+
+    <!-- side var-->
+    <aside class="sideBar">
+        <!-- home var-->
+        <div class="home-Sidebar">
+            <ul>
+                <img src="assets\icons\house.png" alt="Home Logo">
+                <p>Home</p>
+            </ul>
+            <ul>
+                <img src="assets\icons\play.png" alt="Shorts Logo">
+                <p>Shorts</p>
+            </ul>
+            <ul>
+                <img src="assets\icons\subscribe.png" alt="Subscription Logo">
+                <p>Subscription</p>
+            </ul>   
+        </div>
+        <!-- history var-->
+        <div class="history-Sidebar">
+            <ul><h1>You</h1></ul>
+            <ul>
+                <img src="assets\icons\history.png" alt="History Logo">
+                <p>History</p>
+            </ul> 
+            <ul>
+                <img src="assets\icons\playlist.png" alt="playlist Logo">
+                <p>Playlists</p>
+            </ul>  
+            <ul>
+                <img src="assets\icons\watch-icon.png" alt="watch later Logo">
+                <p>Watch later</p>
+            </ul>  
+            <ul>
+                <img src="assets\icons\like.png" alt="liked Logo">
+                <p>Liked videos</p>
+            </ul>    
+        </div>
+        <!-- explore var-->
+        <div class="explore-Sidebar">
+            <h1>Explore</h1>
+            <ul>
+                <img src="assets\icons\explore-icon\fire.png" alt="Trending Logo">
+                <p>Trending</p>
+            </ul>
+            <ul>
+                <img src="assets\icons\explore-icon\musical-note.png" alt="Music Logo">
+                <p>Music</p>
+            </ul>
+            <ul>
+                <img src="assets\icons\explore-icon\clapperboard.png" alt="Movies Logo">
+                <p>Movies</p>
+            </ul>
+            <ul>
+                <img src="assets\icons\explore-icon\console.png" alt="Gaming Logo">
+                <p>Gaming</p>
+            </ul>
+            <ul>
+                <img src="assets\icons\explore-icon\newspaper-folded.png" alt="News Logo">
+                <p>News</p>
+            </ul>
+            <ul>
+                <img src="assets\icons\explore-icon\trophy.png" alt="Sports Logo">
+                <p>Sports</p>
+            </ul>
+            <ul>
+                <img src="assets\icons\explore-icon\hanger.png" alt="Fashion & Beauty Logo">
+                <p>Fashion & Beauty</p>
+            </ul>
+        </div>
+        <!-- madeFrom var-->
+        <div class="madeFrom-Sidebar">
+            <h1>Made From Youtube</h1>
+            <ul>
+                <img src="assets\icons\youtube.png" alt="Youtube Premium Logo">
+                <p>Youtube Premium</p>
+            </ul>
+            <ul>
+                <img src="assets\icons\music.png" alt="Youtube Music Logo">
+                <p>Youtube Music</p>
+            </ul>
+            <ul>
+                <img src="assets\icons\yt-kits.png" alt="Youtube Kids Logo" >
+                <p>Youtube Kids</p>
+            </ul>
+        </div>
+        <!-- setting var-->
+        <div class="setting-Sidebar">
+            <ul>
+                <img src="assets\icons\settings\settings.png" alt="Settings Logo">
+                <p>Settings</p>
+            </ul>
+            <ul>
+                <img src="assets\icons\settings\red-flag.png" alt="Report Logo">
+                <p>Report</p>
+            </ul>
+            <ul>
+                <img src="assets\icons\settings\question.png" alt="Help Logo">
+                <p>Help</p>
+            </ul>
+            <ul>
+                <img src="assets\icons\settings\feedback.png" alt="Feedback Logo">
+                <p>Send Feedback</p>
+            </ul>
+        </div>
+
+        <div class="about-Sidebar">
+            <p>About  Press  Copyright</p>
+            <p>Contact Us    Creators</p>
+            <p></p>
+            
+        </div>
+
+        <div class="min-home">
+            <ul>
+                <img src="assets\icons\house.png" alt="Home Logo">
+                <p>Home</p>
+            </ul>
+            <ul>
+                <img src="assets\icons\play.png" alt="Shorts Logo">
+                <p>Shorts</p>
+            </ul>
+            <ul>
+                <img src="assets\icons\subscribe.png" alt="Subscription Logo">
+                <p>Subscription</p>
+            </ul>
+            <ul>
+                <img src="assets\icons\user.png" alt="Profile Logo">
+                <p>You</p>
+            </ul>    
+        </div>
+
+    </aside>
+ 
+    <!-- main content-->
+    <div class="main-content">
+
+        <div class="one-content">
+            <img src="assets\icons\video\video1.png" alt="" class="video">
+            <div class="information">
+                <div class="content-profile">
+                    <img src="assets\icons\channel\nico-channel.jpg" alt="">
+                </div>
+                <div class="content-information">
+                    <h1>Roblox | CASE CLICKER OPENING?! | 22Mill Case-bux?!</h1>
+                    <p class="channel-name">sinicoo</p>
+                    <div>
+                        <p>1.9M views</p>
+                        <p>•</p>
+                        <p>6 years ago</p>
+                    </div>
+                </div>
+                <div class="content-dot">
+                    <img src="assets\icons\dots.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="one-content">
+            <img src="assets\icons\video\video2.png" alt="" class="video">
+            <div class="information">
+                <div class="content-profile">
+                    <img src="assets\icons\channel\nico-channel.jpg" alt="">
+                </div>
+                <div class="content-information">
+                    <h1>How To Minecraft 1.8</h1>
+                    <p class="channel-name">sinicoo</p>
+                    <div>
+                        <p>2M views</p>
+                        <p>•</p>
+                        <p>9 years ago</p>
+                    </div>
+                </div>
+                <div class="content-dot">
+                    <img src="assets\icons\dots.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="one-content">
+            <img src="assets\icons\video\video3.png" alt="" class="video">
+            <div class="information">
+                <div class="content-profile">
+                    <img src="assets\icons\channel\nico-channel.jpg" alt="">
+                </div>
+                <div class="content-information">
+                    <h1>4k clutch faceit livestream
+                    </h1>
+                    <p class="channel-name">sinicoo</p>
+                    <div>
+                        <p>10M views</p>
+                        <p>•</p>
+                        <p>2 years ago</p>
+                    </div>
+                </div>
+                <div class="content-dot">
+                    <img src="assets\icons\dots.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="one-content">
+            <img src="assets\icons\video\video4.png" alt="" class="video">
+            <div class="information">
+                <div class="content-profile">
+                    <img src="assets\icons\channel\nico-channel.jpg" alt="">
+                </div>
+                <div class="content-information">
+                    <h1>valorant montage only with motionblur</h1>
+                    <p class="channel-name">sinicoo</p>
+                    <div>
+                        <p>522K views</p>
+                        <p>•</p>
+                        <p>1 year ago</p>
+                    </div>
+                </div>
+                <div class="content-dot">
+                    <img src="assets\icons\dots.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="one-content">
+            <img src="assets\icons\video\video5.png" alt="" class="video">
+            <div class="information">
+                <div class="content-profile">
+                    <img src="assets\icons\channel\nico-channel.jpg" alt="">
+                </div>
+                <div class="content-information">
+                    <h1>Oliver Tree 🌴 - Life Goes On (VALORANT VISUAL LYRIC VIDEO)
+                    </h1>
+                    <p class="channel-name">sinicoo</p>
+                    <div>
+                        <p>5M views</p>
+                        <p>•</p>
+                        <p>2 years ago</p>
+                    </div>
+                </div>
+                <div class="content-dot">
+                    <img src="assets\icons\dots.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="one-content">
+            <img src="assets\icons\video\video6.png" alt="" class="video">
+            <div class="information">
+                <div class="content-profile">
+                    <img src="assets\icons\channel\congtv.jpg" alt="">
+                </div>
+                <div class="content-information">
+                    <h1>BIGLAAN</h1>
+                    <p class="channel-name">Cong TV</p>
+                    <div>
+                        <p>2.3M views</p>
+                        <p>•</p>
+                        <p>2 months ago</p>
+                    </div>
+                </div>
+                <div class="content-dot">
+                    <img src="assets\icons\dots.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="one-content">
+            <img src="assets\icons\video\video7.png" alt="" class="video">
+            <div class="information">
+                <div class="content-profile">
+                    <img src="assets\icons\channel\congtv.jpg" alt="">
+                </div>
+                <div class="content-information">
+                    <h1>RELOKS</h1>
+                    <p class="channel-name">Cong TV</p>
+                    <div>
+                        <p>3.9M views</p>
+                        <p>•</p>
+                        <p>5 months ago</p>
+                    </div>
+                </div>
+                <div class="content-dot">
+                    <img src="assets\icons\dots.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="one-content">
+            <img src="assets\icons\video\video8.png" alt="" class="video">
+            <div class="information">
+                <div class="content-profile">
+                    <img src="assets\icons\channel\daniel caesar.jpg" alt="">
+                </div>
+                <div class="content-information">
+                    <h1>Daniel Caesar - Superpowers (Official Audio)</h1>
+                    <p class="channel-name">Daniel Caesar</p>
+                    <div>
+                        <p>45M views</p>
+                        <p>•</p>
+                        <p>1 year ago</p>
+                    </div>
+                </div>
+                <div class="content-dot">
+                    <img src="assets\icons\dots.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="one-content">
+            <img src="assets\icons\video\video9.png" alt="" class="video">
+            <div class="information">
+                <div class="content-profile">
+                    <img src="assets\icons\channel\kendrick.jpg" alt="">
+                </div>
+                <div class="content-information">
+                    <h1>squabble up</h1>
+                    <p class="channel-name">
+                        Kendrick Lamar</p>
+                    <div>
+                        <p>14M views</p>
+                        <p>•</p>
+                        <p>9 days ago</p>
+                    </div>
+                </div>
+                <div class="content-dot">
+                    <img src="assets\icons\dots.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="one-content">
+            <img src="assets\icons\video\video10.jpg" alt="" class="video">
+            <div class="information">
+                <div class="content-profile">
+                    <img src="assets\icons\channel\sza.jpg" alt="">
+                </div>
+                <div class="content-information">
+                    <h1>SZA - Doves In The Wind (Official Video) ft. Kendrick Lamar</h1>
+                    <p class="channel-name">SZA</p>
+                    <div>
+                        <p>12M views</p>
+                        <p>•</p>
+                        <p>6 years ago</p>
+                    </div>
+                </div>
+                <div class="content-dot">
+                    <img src="assets\icons\dots.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="one-content">
+            <img src="assets\icons\video\video11.jpg" alt="" class="video">
+            <div class="information">
+                <div class="content-profile">
+                    <img src="assets\icons\channel\frank-ocean.jpg" alt="">
+                </div>
+                <div class="content-information">
+                    <h1>Frank Ocean - Biking (feat. Jay Z & Tyler, The Creator)</h1>
+                    <p class="channel-name">Frack Ocean</p>
+                    <div>
+                        <p>14M views</p>
+                        <p>•</p>
+                        <p>7 years ago</p>
+                    </div>
+                </div>
+                <div class="content-dot">
+                    <img src="assets\icons\dots.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="one-content">
+            <img src="assets\icons\video\video 12.jpg" alt="" class="video">
+            <div class="information">
+                <div class="content-profile">
+                    <img src="assets\icons\channel\kendrick.jpg" alt="">
+                </div>
+                <div class="content-information">
+                    <h1>Kendrick Lamar - HUMBLE.</h1>
+                    <p class="channel-name">Kendrick Lamar</p>
+                    <div>
+                        <p>1B views</p>
+                        <p>•</p>
+                        <p>7 years ago</p>
+                    </div>
+                </div>
+                <div class="content-dot">
+                    <img src="assets\icons\dots.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="one-content">
+            <img src="assets\icons\video\video13.jpg" alt="" class="video">
+            <div class="information">
+                <div class="content-profile">
+                    <img src="assets\icons\channel\nuke.jpg" alt="">
+                </div>
+                <div class="content-information">
+                    <h1>10 SCARY Videos To Give You NIGHTMARES ! *DON'T watch ALONE!</h1>
+                    <p class="channel-name">Nuke's Top 5</p>
+                    <div>
+                        <p>2.1M views</p>
+                        <p>•</p>
+                        <p>12 days ago</p>
+                    </div>
+                </div>
+                <div class="content-dot">
+                    <img src="assets\icons\dots.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="one-content">
+            <img src="assets\icons\video\video14.jpg" alt="" class="video">
+            <div class="information">
+                <div class="content-profile">
+                    <img src="assets\icons\channel\news5.png" alt="">
+                </div>
+                <div class="content-information">
+                    <h1>Umano'y screenshots ng usapan nina Maris Racal at Anthony Jennings, pinagpiyestahan</h1>
+                    <p class="channel-name">News5Everywhere</p>
+                    <div>
+                        <p>60K views</p>
+                        <p>•</p>
+                        <p>14 hours agp</p>
+                    </div>
+                </div>
+                <div class="content-dot">
+                    <img src="assets\icons\dots.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="one-content">
+            <img src="assets\icons\video\video15.jpg" alt="" class="video">
+            <div class="information">
+                <div class="content-profile">
+                    <img src="assets\icons\channel\rico.jpg" alt="">
+                </div>
+                <div class="content-information">
+                    <h1>Rico Blanco - You'll Be Safe Here (Official Visualizer)</h1>
+                    <p class="channel-name">Rico Blanco</p>
+                    <div>
+                        <p>19M views</p>
+                        <p>•</p>
+                        <p>1 year ago</p>
+                    </div>
+                </div>
+                <div class="content-dot">
+                    <img src="assets\icons\dots.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+        
+
+    </div>
+
+</div>
+<script src="assets\scripts.js"></script>
+</body>
+</html>

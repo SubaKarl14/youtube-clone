@@ -1,0 +1,760 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: white;
+    color: black;
+}
+
+
+h1, h2, h3 {
+    font-family: 'Product Sans', sans-serif;
+}
+/* header*/
+header {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    padding: 25px 20px;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+}
+
+.left-header {
+    display: flex;
+    align-items: center;
+}
+
+/* hamburger menu*/
+.hamburger {
+    margin-right: 15px;
+    padding: 8px;
+    cursor: pointer;
+}
+.hamburger:hover {
+    background-color: #dbdbdb;
+    border-radius: 100px;
+
+}
+.bar {
+    display: block;
+    width: 18px;
+    height: 1px;
+    margin: 5px auto;
+    background-color: #101010;
+}
+
+.yt-leftHeader {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.yt-leftHeader h1{
+    font-size: 20px;
+    margin-left: 3px;
+    letter-spacing: -1px;
+
+}
+
+.youtube-icon {
+    height: 30px;
+    width: 100px;
+}
+
+/* mid header*/
+.mid-header {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+/* search*/
+.search-container {
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    border: 1px solid rgb(180, 173, 173);
+    width: 600px;
+    height: 40px;
+}
+
+.search-input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+/* search erase icon*/
+.erase-icon {
+    border: 1px solid transparent;
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: middle;
+    outline: 0;
+    cursor: pointer;
+}
+
+.erase-icon:after {
+    content: "X";
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    display: none;  /* Hide by default */
+}
+
+/* Show the erase icon when the input is invalid */
+.search-input:invalid ~ .erase-icon {
+    display: inline-block;
+}
+
+
+
+.search-button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+    border-left: 1px solid rgb(180, 173, 173);
+    height: 100%;
+    background-color: #f7f7f7;
+    padding-left: 20px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.search-button:hover {
+    background-color: #cecccc;
+}
+
+.search-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 25px;
+  }
+
+.speak-icon {
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-radius: 20px ;
+}
+
+.speak-icon:hover {
+    background-color: #cecccc;
+}
+
+
+/* left-header*/
+.right-header {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+
+
+.notif-icon, .video-icon {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    padding: 7px;
+    margin-right: 20px;
+  }
+
+.profile-icon {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+}
+
+.video-icon:hover, .notif-icon:hover {
+    background-color: #dbdbdb;
+    border-radius: 100px;   
+  }
+
+/* list of genre or diko alam ano tawag don*/
+.list-genre {
+    background-color: white;
+    width: 88%;
+    height: 50px;
+    position: fixed;
+    margin-left: 240px;
+    margin-top: 60px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    width: 98%;
+    position: relative;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    white-space: nowrap;
+  }
+  
+  .carousel-item {
+    font-size: 15px;
+    background: #f1f0f0;
+    border-radius: 10px;
+    padding: 7px 10px;
+    margin: 7px;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .carousel-item:hover {
+    background-color: #dadada;
+    transition: .3s;
+  }
+  
+  .wrapper i:hover {
+    background-color: #dadada;
+  }
+
+  .wrapper button {
+    font-size: 20px;
+    height: 40px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: white;
+    border: none;
+    margin-left: 3px;
+  }
+
+  .wrapper button:hover {
+    background-color: #dadada;
+  }
+
+  .wrapper .carousel {
+    font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  }
+  .carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging img{
+    pointer-events: none;
+  }
+
+/* main*/
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+  /* SideBar*/
+.sideBar {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    font-size: 14px;
+    height: 95%;
+    overflow: hidden;
+    position: fixed;
+    scrollbar-width: thin;
+}
+
+/* side bar collapsed*/
+.sideBar.collapsed {
+    width: 80px;
+}
+
+
+.sideBar:hover {
+    overflow-y: scroll; 
+}
+
+.sideBar div {
+    border-bottom: 1px solid rgb(218, 214, 214); 
+    padding: 10px 0px;
+    
+}
+
+.sideBar ul {
+    cursor: pointer;
+    padding: 0px 10px;
+    
+}
+
+/* Home SideBar*/
+.home-Sidebar ul {
+    display: flex;
+    height: 35px;
+    border-radius: 10px;
+    align-items: center;
+    margin: 0px 10px;
+    padding: 20px 15px;
+}
+
+.home-Sidebar img {
+    height: 25px;
+    width: 25px;
+    margin-right: 15px;
+}
+
+
+
+.home-Sidebar ul:hover {
+    background-color: #dbdbdb;
+}
+
+/* history SideBar*/
+.history-Sidebar ul {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    border-radius: 10px;
+    margin: 0px 10px;
+    padding: 20px 15px;
+}
+
+.history-Sidebar h1 {
+    font-size: 15px;
+
+}
+
+.history-Sidebar ul:hover {
+    background-color: #dbdbdb;
+}
+
+.history-Sidebar img {
+    height: 22px;
+    width: 22px;
+    margin-right: 15px;
+}
+
+
+/* explore SideBar*/
+.explore-Sidebar ul {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    border-radius: 10px;
+    margin: 0px 10px;
+    padding: 20px 15px;
+}
+
+
+.explore-Sidebar h1 {
+    font-size: 15px;
+    margin: 0px 10px;
+    padding: 6px;
+}
+
+.explore-Sidebar ul:hover {
+    background-color: #dbdbdb;
+}
+
+.explore-Sidebar img {
+    height: 22px;
+    width: 22px;
+    margin-right: 15px;
+}
+
+/* madeFrom SideBar*/
+.madeFrom-Sidebar ul {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    border-radius: 10px;
+    margin: 0px 10px;
+    padding: 20px 15px;
+}
+
+.madeFrom-Sidebar h1 {
+    font-size: 15px;
+    margin: 0px 10px;
+    padding: 6px;
+}
+
+.madeFrom-Sidebar ul:hover {
+    background-color: #dbdbdb;
+}
+
+.madeFrom-Sidebar img {
+    height: 25px;
+    width: 25px;
+    margin-right: 15px;
+}
+
+
+/* setting SideBar*/
+.setting-Sidebar ul {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    border-radius: 10px;
+    margin: 0px 10px;
+    padding: 20px 15px;
+}
+
+.setting-Sidebar h1 {
+    font-size: 15px;
+
+}
+
+.setting-Sidebar ul:hover {
+    background-color: #dbdbdb;
+}
+
+.setting-Sidebar img {
+    height: 22px;
+    width: 22px;
+    margin-right: 15px;
+}
+.min-home {
+    display: none;
+}
+
+/* Main Content*/
+.main-content{
+    margin-top: 100px;
+    width: 87%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-left: 230px;
+}   
+
+/* one content*/
+.one-content {
+    display: flex;
+    flex-direction: column;
+    margin: 7px;
+    height: 270px;
+    width: 19%;
+    margin-bottom: 30px;
+}
+
+/* video*/
+.video {
+    cursor: pointer;
+    height: 180px;
+    width: 305px;
+    margin: 5px 5px;
+    border-radius: 15px;
+}
+
+
+.video:hover{
+    border-radius: 0px;
+    transition: 0.5s;
+}
+
+/* information of one content*/
+.information {
+    display: flex;
+    height: 75px;
+    width: 315px;
+    margin: 5px 5px;
+
+}
+
+/* channel profile*/
+.content-profile img {
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+/* content info*/
+.content-information {
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.content-information h1{
+    font-size: 15px;
+    
+}
+.channel-name:hover{
+    color: black;
+}
+
+.content-information p{
+    padding-top: 3px;
+    color: #606060;
+    font-size: 14px;
+    
+}
+
+.content-information div{
+    display: flex;
+}
+
+.content-information div p{
+    padding-right: 5px;
+}
+
+
+/* content dot*/
+.content-dot{
+    display: flex;
+    padding-left: 7px;
+    align-items: center;
+    cursor: pointer;
+    margin-left: auto;
+    height: 30px;
+    width: 30px;
+    
+}
+.content-dot:hover{
+    border-radius: 100px;
+    background-color: #e4e2e2; 
+}
+
+.content-dot img{
+    width: 17px;
+    height: 17px;
+}
+
+
+
+@media (max-width: 1850px) {
+
+    .one-content {
+        width: 23.5%;
+        height: 350px;
+    }
+    .video {
+        cursor: pointer;
+        background-color: gray;
+        height: 200px;
+        width: 100%;
+    }
+    .information {
+        width: 100%;
+    }
+
+    .content-profile img {
+        height: 40px;
+        width: 40px;
+
+    }
+}
+
+@media (max-width: 1600px) {
+
+    .one-content {
+        width: 32%;
+        height: 340px;
+        margin-bottom: 30px;
+    }
+    .video {
+        cursor: pointer;
+        background-color: gray;
+        height: 210px;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 1400px) {
+
+    .one-content {
+        height: 340px;
+    }
+    .video {
+        height: 210px;
+    }
+
+}
+
+.min-home {
+    height:500px;
+}
+/* Home SideBar*/
+.min-home ul {
+    display: flex;
+    flex-direction: column;
+    height: 75px;
+    width: 80px;
+    border-radius: 10px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 5px;
+    font-size: 0.7rem;
+}
+.min-home img {
+    height: 25px;
+    width: 25px;
+    margin-bottom: 7px;
+}
+
+
+.min-home ul:hover {
+    background-color: #dbdbdb;
+}
+
+
+@media (max-width: 1300px) {
+    .mid-header{
+        width: 50%;
+    }
+    .list-genre{
+        margin-left: 90px;
+        width: 89%;
+
+    }
+    .wrapper {
+        width: 100%;
+    }
+    .main-content{
+        margin-left: 90px;
+        width: 100%;
+    }
+    .one-content {
+        height: 300px;
+        width: 31.5%;
+    }
+    .video {
+        height: 210px;
+    }
+    .sideBar{
+        align-items: center;
+        width: 85px;
+    }
+    .sideBar:hover {
+        overflow-y: hidden; 
+    }
+    .home-Sidebar, .history-Sidebar, .explore-Sidebar, .adeFrom-Sidebar, .madeFrom-Sidebar, .setting-Sidebar, .about-Sidebar{
+        display: none;
+    }
+    .min-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 950px) {
+    .mid-header{
+        margin-left: 0;
+        width: 30%;
+    }
+    .one-content {
+        height: 300px;
+        width: 47%;
+    }
+    .list-genre{
+        width: 87%;
+    }
+    
+    
+}
+
+@media (max-width: 870px) {
+    .list-genre{
+        width: 84%;
+    }
+    
+}
+
+@media (max-width: 800px) {
+    .list-genre{
+        margin-left: 30px;
+        width: 92%
+    }
+    .sideBar{
+        display: none;
+    }
+    .main-content{
+        margin-left: 10px;
+        width: 100%;
+    }
+    .speak-icon{
+        display: none;
+    }
+    .mid-header{
+        margin-right: 85px;
+        width: 20%;
+    }
+}
+
+@media (max-width: 700px) {
+    .mid-header{
+        margin-right: 90px;
+        width: 20%;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .mid-header{
+        width: 200px;
+    }
+
+}
+.search2-icon{
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .list-genre{
+        margin-left: 10px;
+        width: 92%;
+    }
+    .search2-icon {
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        margin-right: 15px;
+        padding: 5px;
+    }
+    .search2-icon:hover {
+        background-color: #dbdbdb;
+        border-radius: 100px;   
+      }
+    .search-container{
+        border: none;
+    }
+    .search-container input {
+        display: none;
+    }
+    .mid-header{
+        display: none;
+    }
+    .one-content {
+        height: 350px;
+        width: 100%;
+        margin-right: 20px;
+    }
+    .video {
+        height: 280px;
+    }
+}
+
+
+
+
